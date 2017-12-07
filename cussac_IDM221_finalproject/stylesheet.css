@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 100 %; /* 16 px */
+  font-size: 100%; /* 16 px */
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,19 +11,26 @@ html {
 
 h1 {
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-bottom: .1rem solid orange;
 }
 
-ul {
-  -webkit-padding-start: 0;
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 250;
 }
 
 
-/* Homepage starts here */
-  /* Home header starts here */
+/* Homepage start */
+  /* Home header start */
   #headnav_home {
-    position: absolute;
+    position: fixed;
+    top: 0;
     height: 10rem;
     width: 100%;
   }
@@ -40,9 +47,8 @@ ul {
     font-size: 4rem;
     font-weight: 200;
     color: black;
-    margin: auto;
     text-decoration: none;
-    margin-left: 0 auto;
+    margin: 0 auto;
   }
 
   #headnav_home ul#homenav {
@@ -83,18 +89,16 @@ ul {
   #headnav_home nav a:hover {
     color: grey;
   }
-  /* Home header ends here
-
-  /* Home main starts here */
+  /* Home header end */
+  /* Home main start */
   p#homedescription {
     font-size: 1rem;
     color: black;
     background-color: lightgray;
     text-align: center;
   }
-  /* Home main ends here */
-
-  /* Home footer starts here */
+  /* Home main end */
+  /* Home footer start */
   #homefooter nav {
     text-align: center;
     position:
@@ -121,125 +125,219 @@ ul {
     color: black;
     text-decoration: none;
   }
-  /* Home footer ends here */
-/* Home ends here */
+  /* Home footer end */
+/* Home end */
 
 
 
 
-/* Header navigation starts here */
-.headnav {
+/* Header navigation start */
+#headnav {
   background-color: white;
   width: 100%;
   text-align: center;
   border-bottom: .25rem solid black;
 }
 
-.headnav nav ul li a#jaspercussac {
+#headnav nav ul li a#jaspercussac {
   font-size: 2rem;
   color: black;
   margin-right: 5rem;
   text-decoration: none;
 }
 
-.headnav nav ul {
+#headnav nav ul {
   list-style-type: none;
   -webkit-padding-start: 0;
 }
 
-.headnav nav li {
+#headnav nav li {
   display: inline;
   margin: 0 1rem;
 }
 
-.headnav nav ul li a {
+#headnav nav ul li a {
   font-size: 1rem;
   font-weight: 325;
   color: black;
   text-decoration: none;
 }
 
-.headnav nav a:visited {
+#headnav nav a:visited {
   color: black;
 }
 
-.headnav nav a:hover {
+#headnav nav a:hover {
   color: grey;
 }
-/* Header navigation ends here
+/* Header navigation end */
 
-
-
-
-/* Footer navigation starts here */
+/* Footer navigation start */
 #footer {
   text-align: center;
 }
 
+#footer nav {
+  width: 100%;
+  border-top: .05rem solid black;
+  margin-bottom: 2.5rem;
+}
+
+#footer nav li a#jaspercussac_footer {
+  font-size: 1.5rem;
+  margin-right: 3rem;
+}
+
 #footer nav li{
   display: inline;
+  margin: 0 .75rem;
 }
 
 #footer nav li a {
+  font-size: 1rem;
+  font-weight: 325;
   color: black;
   text-decoration: none;
 }
+/* Footer navigation end */
 
 
-/* About starts here */
+
+
+/* About start */
 .about {
   width: 100%;
+  margin: 0 auto;
   background-color: white;
   text-align: center;
-
 }
 
 #aboutpicture {
-  width: 35%;
+  float: left;
+  width: 50%;
   margin-top: 2rem;
   text-align: center;
   background-color: white;
-  display: inline-block;
   vertical-align: top;
 }
 
 #abouttext {
-  display: inline-block;
+  float: left;
   width: 50%;
-  background-color: lightgrey;
+  background-color: #DEDEDE;
   vertical-align: top;
   text-align: left;
-  padding: 2rem 2rem 3rem .5rem;
+  padding: 2rem 2rem 3rem .75rem;
 }
-/* About ends here */
+
+#portrait {
+  width: 35%;
+  padding: .1rem;
+  border: .15rem solid darkgrey;
+  border-radius: 50%;
+}
+/* About end */
 
 /* Resume start */
-h2 {
-  font-size: 1.25rem;
-  font-weight: 350;
-}
-
 .resume {
   width: 100%;
+  margin: 0 auto;
   background-color: white;
   text-align: center;
 }
 
 #name {
-  width: 35%;
-  margin-right: 5rem;
+  float: left;
+  width: 50%;
+  vertical-align: top;
   text-align: center;
   background-color: white;
-  display: inline-block;
-  vertical-align: top;
 }
 
 #resumecontent {
-  display: inline-block;
+  float: left;
   width: 50%;
-  background-color: lightgrey;
+  background-color: #DEDEDE;
   vertical-align: top;
   text-align: left;
   padding: 2rem 2rem 3rem .5rem;
+  font-weight: 250;
+}
+
+#resumecontent h2 {
+  font-size: 1.25rem;
+  font-weight: 325;
+  border-bottom: .05rem solid darkgrey;
+  padding-bottom: .35rem;
+}
+
+#resumecontent ul {
+  margin-bottom: 2rem;
+}
+
+#resumecontent dl {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 350;
 }
 /* Resume end */
+
+/* Contact start */
+#contact {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+#contact ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+}
+
+#contactphoto img {
+  width: 35%;
+  padding: .1rem;
+  border: .15rem solid darkgrey;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+/* Contact end */
+
+/* Portfolio start */
+#portfolio_section_drawing {
+  width: 100%;
+  text-align: center;
+  background-color: #DEDEDE;
+}
+
+#portfolio_section_drawing img {
+  margin: 0 .4rem 2rem;
+}
+
+#fidelcastro {
+  padding-bottom: 2.5rem;
+}
+
+#portfolio_section_invision {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#portfolio_section_invision img {
+  margin-top: 2rem;
+}
+
+#portfolio_section_invision a {
+  font-size: 2rem;
+  font-weight: 325;
+  color: #ff69b4;
+  text-decoration: underline;
+}
+/* Portfolio end */
