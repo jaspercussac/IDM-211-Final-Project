@@ -5,13 +5,19 @@
 html {
   font-size: 100%; /* 16 px */
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
   font-weight: 300;
   font-size: 2.5rem;
+  padding-bottom: .1rem;
   border-bottom: .1rem solid orange;
 }
 
@@ -175,12 +181,15 @@ p {
 /* Footer navigation start */
 #footer {
   text-align: center;
+  background-color: white;
+  margin: 0;
 }
 
 #footer nav {
   width: 100%;
   border-top: .05rem solid black;
   margin-bottom: 2.5rem;
+  padding-bottom: .1rem;
 }
 
 #footer nav li a#jaspercussac_footer {
@@ -217,7 +226,6 @@ p {
   width: 50%;
   margin-top: 2rem;
   text-align: center;
-  background-color: white;
   vertical-align: top;
 }
 
@@ -227,7 +235,7 @@ p {
   background-color: #DEDEDE;
   vertical-align: top;
   text-align: left;
-  padding: 2rem 2rem 3rem .75rem;
+  padding: 2rem 2rem 3rem 1rem;
 }
 
 #portrait {
@@ -311,30 +319,35 @@ h2 {
 /* Contact end */
 
 /* Portfolio start */
-#portfolio_section_drawing {
+#portfoliobody {
+  background-image: url(files/backgroundpattern.svg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.portfolio_section {
   width: 100%;
   text-align: center;
+}
+
+#portfolio_background_grey {
+  width: 100%;
+  height: 100%;
   background-color: #DEDEDE;
 }
 
-#portfolio_section_drawing img {
-  margin: 0 .4rem 2rem;
+.portfolio_section img {
+  margin: 2rem 1rem;
 }
 
 #fidelcastro {
-  padding-bottom: 2.5rem;
+  position: relative;
+  bottom: 2.5rem;
 }
 
-#portfolio_section_invision {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-#portfolio_section_invision img {
-  margin-top: 2rem;
-}
-
-#portfolio_section_invision a {
+.portfolio_section a {
   font-size: 2rem;
   font-weight: 325;
   color: #ff69b4;
